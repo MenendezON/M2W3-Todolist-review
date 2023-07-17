@@ -1,0 +1,109 @@
+body {
+  background-color: bisque;
+  background-image: url(../images/dashed-cross-dark.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  border: 1px solid silver;
+  margin: 100px auto;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+ul li {
+  padding: 10px;
+  border-top: 1px solid silver;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+ul li:hover {
+  border: 1px solid gray;
+}
+
+li input {
+  width: 10%;
+}
+
+li p {
+  width: 80%;
+  font-weight: 600;
+}
+
+li i {
+  width: 24px;
+  cursor: pointer;
+  margin:auto;
+}
+
+.reorder, .delete{
+  font-size:24px;
+}
+
+.extra {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+form input[type=text] {
+  border: 0;
+  border-top: 1px solid silver;
+  height: 40px;
+  padding: 5px 20px;
+  width: 90%;
+  outline: 0;
+  font-style: italic;
+}
+
+form input[type=submit] {
+  border: 0;
+  border-top: 1px solid silver;
+  height: 40px;
+  padding: 5px;
+  width: 10%;
+  outline: 0;
+  font-style: italic;
+}
+
+.taskField {
+  width: 100%;
+  height: 30px;
+  border: 0;
+}
+
+.reoder{
+  cursor:move;
+}
+
+.taskField:disabled{
+  background-color: white;
+}
+
+input[type=button] {
+  border: 0;
+  border-top: 1px solid silver;
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  outline: 0;
+  font-weight: bold;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
